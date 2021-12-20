@@ -1,0 +1,90 @@
+.main {
+    padding:20px 30px 0;
+    background: var(--bg-color);
+    border-top: 2px solid #008bc4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 40px auto 0;
+    font-family: 'Inter', 'sans-serif';
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.btpContainer {
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btpIcon {
+    background-color: var(--invertedbg-color);
+    margin: 0 auto;
+    font-size: 2.5rem;
+    padding: 3px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 800;
+    position: absolute;
+    top: -45%;
+    left: 45%;
+    transform: translate(-5%, -10%);
+}
+
+
+.iconsDiv {
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 1.1rem;
+}
+
+.icon {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-weight: 600;
+}
+
+.icon:hover {
+    background-color: white;
+    color: var(--bg-color);
+}
+
+@media screen and (min-width: 550px) {
+    .iconsDiv {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding: 5% 8% 0;
+    }
+
+    .iconsDiv {
+        width: 40%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .iconsDiv {
+        width: 30%;
+    }
+}
+

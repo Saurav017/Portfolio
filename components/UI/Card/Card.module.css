@@ -1,0 +1,45 @@
+.main {
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: 10px;
+    background-color: var(--card-color);
+    box-shadow: 0 3px 8px 0 rgba(0, 0,0,0.3);
+    border-radius: 10px;
+}   
+
+.imgContainer {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.aboutContainer {   
+}
+
+.title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.description  {
+    font-size: 0.68rem;
+    padding: 5px 0 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 4px 7px;
+    background-color: var(--card-btn-color);
+    border-radius: 2px;
+    color: var(--card-color-inverted);
+}
+
