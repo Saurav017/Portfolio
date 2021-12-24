@@ -9,6 +9,7 @@
 }
 
 .subtitle {
+    padding-top: 10px;
     color: var(--primary-text-color);
     text-align: center;
     font-family: 'Poppins', 'sans-serif';
@@ -44,23 +45,50 @@
     resize:none;
 }
 
+.input:active, .input:focus,.textArea:active, .textArea:focus {
+    outline: 0 solid var(--primary-text-color);
+    background-color: transparent;    
+}
+
 .contactBtn {
     font-size: 1rem;
     letter-spacing: 0.1rem;   
     background: transparent;
     border: 3px solid #008bc4;
     color: var(--primary-text-color);
-    margin: 10px 0 0;
+    margin: 10px 0 30px;
     padding: 10px 20px;
     font-weight: 600;
     position: relative;
     cursor: pointer;
     font-family: 'Poppins', 'sans-serif';
     text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.sendSpan {
+    position: relative;
+    z-index: 5;
+}
+
+.contactBtn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #008bc4;
+    transition: all 0.5s;
 }
 
 .contactBtn:hover {
+    color: white
+}
 
+
+.contactBtn:hover::after {
+    width: 100%;
 }
 
 @media screen and (min-width: 600px) {

@@ -5,7 +5,7 @@ export const CardData = [
     id: 1,
     image: img,
     title: "Restaurant Landing Page",
-    category: "Landing Pages",
+    category: "HTML-CSS/JS",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",
@@ -15,7 +15,7 @@ export const CardData = [
     id: 2,
     image: img,
     title: "Restaurant Landing Page",
-    category: "Landing Pages",
+    category: "HTML-CSS/JS",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",
@@ -25,7 +25,7 @@ export const CardData = [
     id: 3,
     image: img,
     title: "Restaurant Landing Page",
-    category: "JavaScript",
+    category: "HTML-CSS/JS",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",
@@ -45,7 +45,7 @@ export const CardData = [
     id: 5,
     image: img,
     title: "Restaurant Landing Page",
-    category: "Javascript",
+    category: "ReactJS",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",
@@ -55,7 +55,7 @@ export const CardData = [
     id: 6,
     image: img,
     title: "Restaurant Landing Page",
-    category: "Landing Pages",
+    category: "HTML-CSS/JS",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",
@@ -65,7 +65,7 @@ export const CardData = [
     id: 7,
     image: img,
     title: "Restaurant Landing Page",
-    category: "Landing Pages",
+    category: "HTML-CSS/JS",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",

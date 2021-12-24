@@ -14,21 +14,27 @@
 .skillContainer {
     padding: 30px 0 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
 
-/* .skill {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--primary-text-color);
-    padding: 10px;
-} */
+.skill {
+        background-color: var(--card-color);
+    box-shadow: 0 3px 8px 0 rgba(0, 0,0,0.3);
+    padding: 1rem;
+    border-radius: 50%;
+}
 
 .skillImg {
     height: 30px;
     width: 30px;
+}
+
+@media screen and (max-width: 300px) {
+    .skillContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 560px) {
@@ -50,12 +56,10 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
-    
-
+@media screen and (min-width: 1000px) {
     .skillContainer {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 

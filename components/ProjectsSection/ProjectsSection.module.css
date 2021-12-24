@@ -39,3 +39,14 @@
 }
 
 }
+
+
+@media screen and (max-width: 400px) {   
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0 auto;
+    grid-gap: 2rem 0;
+}
+
+}

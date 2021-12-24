@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Link from 'next/link'
+import { Link as LinkS } from "react-scroll";
 import classes from "./Footer.module.css";
 import { BsArrowBarUp } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
@@ -15,35 +16,35 @@ const Footer = () => {
       <div className={classes.container}>
         <div className={classes.btpContainer}>
           <div className={classes.btpIcon}>
-            <Link href="#">
+            <LinkS to="home" smooth={true} spy={true} duration={500} offset={0}>
               <BsArrowBarUp />
-            </Link>
+            </LinkS>
           </div>
           <p>Back To Top</p>
         </div>
         <div className={classes.iconsDiv}>
           <div className={classes.icon}>
-            <Link href="#">
+            <Link href="https://twitter.com/SauravPurohit4">
               <FaTwitter />
             </Link>
           </div>
           <div className={classes.icon}>
-            <Link href="#">
+            <Link href="https://github.com/Saurav017">
               <AiFillGithub />
             </Link>
           </div>
           <div className={classes.icon}>
-            <Link href="#">
+            <Link href="https://www.linkedin.com/in/saurav-purohit-b4b739195/">
               <FaLinkedin />
             </Link>
           </div>
           <div className={classes.icon}>
-            <Link href="#">
+            <Link href="https://saurav017.hashnode.dev/">
               <SiHashnode />
             </Link>
           </div>
           <div className={classes.icon}>
-            <Link href="#">
+            <Link href="https://www.instagram.com/s_a_u_r_av/">
               <FaInstagram />
             </Link>
           </div>

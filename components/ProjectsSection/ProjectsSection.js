@@ -26,7 +26,7 @@ const ProjectsSection = () => {
   }
 
     return (
-      <section className={classes.main}>
+      <section className={classes.main} id="projects">
         <div className={classes.container}>
           <SectionHeading title="Projects" />
           <CategoryButton handleFilter={handleFilter} filterCategory={filterCategory} />          

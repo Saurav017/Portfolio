@@ -20,29 +20,31 @@
     letter-spacing: 0.1rem;
     font-size: 1rem;
     font-weight: 600;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -60%);
 }
 
 .btpIcon {
-    background-color: var(--invertedbg-color);
+    background-color: var(--secondary-text-color);
     margin: 0 auto;
+    width: 55%;
     font-size: 2.5rem;
-    padding: 3px;
-    display: inline-block;
+    padding: 10px 10px 0;
+    display: flex;
     justify-content: center;
-    align-items: center;
     cursor: pointer;
     font-weight: 800;
-    position: absolute;
-    top: -45%;
-    left: 45%;
-    transform: translate(-5%, -10%);
+    color: var(--secondary-color-inverted);
+    box-shadow: 0 2px 4px 0 rgba(0,14,20,0.2);
 }
 
 
 .iconsDiv {
     display: flex;
     padding: 10px;
-    margin: 0 auto;
+    margin: 1rem auto 0;
     justify-content: space-between;
     width: 80%;
     font-size: 1.1rem;
@@ -65,6 +67,12 @@
     color: var(--bg-color);
 }
 
+@media screen and (max-width: 350px) {
+    .iconsDiv {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 550px) {
     .iconsDiv {
         width: 60%;
@@ -79,6 +87,15 @@
     .iconsDiv {
         width: 40%;
     }
+
+    
+.btpContainer {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
 }
 
 
@@ -86,5 +103,46 @@
     .iconsDiv {
         width: 30%;
     }
+
+    .btpContainer {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -95%);
 }
 
+}
+
+
+@media screen and (min-width: 1450px) {
+    .btpContainer {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -103%);
+}
+
+}
+
+
+@media screen and (min-width: 1700px) {
+    .btpContainer {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+}
+
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .btpContainer {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+}
+
+}

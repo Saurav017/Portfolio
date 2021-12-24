@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <header>        
+        <header id='home'>        
           <Navbar />
           <HeroSection />
           <MouseScroll />

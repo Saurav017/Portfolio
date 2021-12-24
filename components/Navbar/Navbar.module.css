@@ -5,11 +5,13 @@
     height: 80px;
     display: flex;
     align-items: center;
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
     font-size: 1rem;
-    border-bottom: 2px solid #005476;
-    z-index: 99999;
+    z-index: 100;
+    border-bottom: 2px solid #008bc4;
+
 }
 
 .container {
@@ -24,6 +26,9 @@
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menudiv {
@@ -38,17 +43,38 @@
     cursor: pointer;
 }
 
+    .navLinkContainer {
+        display: flex;
+    }
+
 .navlink {
     padding: 0 1rem;
     position: relative;
     color: var(--secondary-text-color);
     text-decoration: none;
+}
+
+.navlink::after {
+content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--secondary-text-color);
+    transform-origin: bottom-right;
+    transition: transform 0.3s ease-in-out
+}
+
+.navlink:hover::after, .navlink:focus::after {
+        transform: scaleX(1);
+    transform-origin: bottom left;
 
 }
 
-.navlink:hover, .navlink:active {
-    
-    border-bottom: 1px solid #fff;
+.navlink:active {
+    color: white;
 }
 
 .icons  {
@@ -78,6 +104,7 @@
     }
     
     .navmenu {
+        border-top: 2px solid #001c27;
         position: fixed;
         left: -100%;
         top: 4rem;
@@ -86,18 +113,23 @@
         width: 100%;
         text-align: center;
         transition: 0.3s ease-in-out;
+        padding-left: 0;
+        max-height: 100vh;
     }
     .navmenu.active {
         left: 0;
     }
 
-    .navlink {
-        padding: 0;
-        margin: 25px;
+    .navLinkContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10%;
+        height: 60vh;
     }
 
-    .navlink:first-child {
-        margin-top: 60px;
+    .navlink {
+        padding: 0;
     }
 
     

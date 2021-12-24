@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
-import Link from "next/link";
+import {Link as LinkS, animateScroll as scroll} from 'react-scroll' 
+import Link from 'next/link'
+import Image from 'next/image'
 import { NavLinks } from "./NavAssets";
 import { BiMoon } from "react-icons/bi";
 import { BiSun } from "react-icons/bi";
 import { VscThreeBars } from 'react-icons/vsc';
 import { FaTimes } from "react-icons/fa";
-import Layout from "../UI/Layout/Layout";
+import Logo from '../../public/images/logo.png'
 
 const Navbar = () => {
   const [activeTheme, setActiveTheme] = useState("light");
@@ -16,7 +18,13 @@ const Navbar = () => {
     const NavMenuOpenHandler = () => {
         setIsOpen((prevState) => !prevState)
     }
-    
+  
+  const navMenuCloseHandler = () => {
+    setIsOpen(true);
+    console.log("Clicked");
+      
+    }  
+  
   const themeChangeHandler = () => {
     setActiveTheme(inactiveTheme);
     };
@@ -43,18 +51,41 @@ const Navbar = () => {
     <nav className={classes.main}>
       <div className={classes.container}>
         <div className={classes.heading}>
-          <Link href="/">Saurav Purohit</Link>
+          <LinkS
+            to='home'
+            spy={true}
+            smooth={true}
+            duration={400}
+          offset={0}>
+          Saurav
+          </LinkS>
+
         </div>
         <div className={classes.menudiv}>
           <div>
             <ul className={NavMenuClass}>
-              {NavLinks.map((link, index) => {
-                return (
-                  <li id={index} className={classes.navlink}>
-                    <Link href={link.link}>{link.title}</Link>
-                  </li>
-                );
-              })}
+              <div className={classes.navLinkContainer}>
+                {NavLinks.map((link, index) => {
+                  return (
+                    <li id={index} className={classes.navlink}>
+                      {link.title === "Blog" ? (
+                        <Link href={link.link}>{link.title}</Link>
+                      ) : (
+                        <LinkS
+                          to={link.link}
+                          onClick={navMenuCloseHandler}
+                          spy={true}
+                          smooth={true}
+                          duration={400}
+                          offset={0}
+                        >
+                          {link.title}
+                        </LinkS>
+                      )}
+                    </li>
+                  );
+                })}
+              </div>
             </ul>
           </div>
           <div className={classes.icons}>

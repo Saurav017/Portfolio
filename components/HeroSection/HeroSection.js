@@ -1,7 +1,5 @@
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 import classes from './HeroSection.module.css'
-import { CgChevronDoubleRight } from "react-icons/cg";
-
 const HeroSection = () => {
     return (
       <main className={classes.container}>
@@ -24,7 +22,13 @@ const HeroSection = () => {
             A Front End Developer passionate to building websites and web
             applications.
           </p>
-          <Link href="/">
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={0}
+          >
             <button className={classes.heroBtn}>View My Work</button>
           </Link>
         </div>

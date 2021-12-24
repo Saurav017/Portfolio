@@ -14,17 +14,19 @@ body {
   --card-color: #fff;  
   --card-color-inverted: #000e14;
   --card-btn-color: #d3d3d3;
+  --secondary-color-inverted: #008bc4;
 }
 
 [data-theme="dark"] {
-  --bg-color: #001c27;
+  --bg-color: #000e14;
   --invertedbg-color: #008bc4;
-  --mainbg-color: #001c27;
+  --mainbg-color: #000e14;
     --primary-text-color: #fff;
-  --secondary-text-color: #49a8ff;
-  --card-color: #000e14;
+  --secondary-text-color: #008bc4;
+  --card-color: #001c27;
   --card-color-inverted: #fff;
-  --card-btn-color: #001c27;
+  --card-btn-color: #000e14;
+  --secondary-color-inverted: #fff;
 }
 
 

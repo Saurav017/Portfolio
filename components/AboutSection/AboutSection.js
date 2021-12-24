@@ -1,20 +1,24 @@
 import Link from "next/link";
+import axios from 'axios'
+import fileDownload from 'js-file-download'
 import Image from "next/image"
 import SectionHeading from "../UI/SectionHeading/SectionHeading";
 import classes from './AboutSection.module.css'
-import fileSaver from 'file-saver'
 import myImage from '../../public/images/hc.jpg'
 
 const AboutSection = () => {
 
-    const saveFileHandler = () => {
-        fileSaver.saveAs(
-            process.env.REACT_APP_CLIENT_URL + "/resources/MyCV.pdf", "MyCV.pdf"
-        )
-    }
+
+  const saveFileHandler = (url, filename) => {
+    axios.get(url, {
+      responseType: 'blob'
+    }) .then((res) => {
+      fileDownload(res.data, filename)
+    })
+  }
 
     return (
-      <section className={classes.main}>
+      <section className={classes.main} id='about'>
         <div className={classes.container}>
           <SectionHeading title="About" />
           <div className={classes.about}>
@@ -22,8 +26,7 @@ const AboutSection = () => {
               <Image
                 src={myImage}
                 alt="My-Pic"
-                layout="fill"
-                objectFit="contain"
+                layout="intrinsic"
               />
             </div>
             <div className={classes.aboutContainer}>
@@ -40,12 +43,12 @@ const AboutSection = () => {
                 dedicate all my skills and talents to develop high-quality and
                 unique things.
                         </p>
-                        <button className={classes.cv} download onClick={saveFileHandler}>
-                            Download CV
-                        </button>
+                        <button className={classes.cv}>
+                <a href="MyCV.pdf" download="Saurav Purohit.pdf">Download CV</a>
+              </button>
             </div>
           </div>
-        </div>
+          </div>
       </section>
     );
 }
