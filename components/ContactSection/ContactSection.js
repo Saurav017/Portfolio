@@ -25,15 +25,7 @@ const ContactSection = () => {
       message: enteredMessage
     }
 
-    // const formData = {}
-
-    // Array.from(event.currentTarget.elements).forEach(field => {
-    //   if (!field.name) {
-    //     return;
-    //   } 
-    //   formData[field.name] = field.value;
-      
-    // })
+    console.log(formData)
 
     fetch('/api/mail', {
       method: 'post',

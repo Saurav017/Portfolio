@@ -105,5 +105,9 @@
     .main {
         padding: 5% 8% 8%;
     }
+
+    .contactBtn {
+        margin: 10px 0 0;
+    }
 }
 
