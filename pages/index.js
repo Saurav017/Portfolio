@@ -29,7 +29,6 @@ export default function Home() {
         <header id='home'>        
           <Navbar />
           <HeroSection />
-          <MouseScroll />
         </header>
           <AboutSection />
         <SkillSection />

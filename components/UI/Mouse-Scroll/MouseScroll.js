@@ -3,7 +3,7 @@ import {Link} from 'react-scroll'
 
 const MouseScroll = () => {
     return (
-        <div className={classes.mouseScroll}>
+      <div className={classes.mouseScroll}>
           <div className={classes.mouse}>
             <div className={classes.wheel}></div>
             <div>
