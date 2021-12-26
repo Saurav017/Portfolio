@@ -1,23 +1,28 @@
 import img from '../../../public/images/restro.png'
+import movieScape from '../../../public/images/moviescape.png'
+import spaceX from '../../../public/images/spacex.png'
+import travelPage from '../../../public/images/travelpage.png'
+import ngoWeb from '../../../public/images/ngoweb.png'
+
 
 export const CardData = [
   {
     id: 1,
-    image: img,
-    title: "Restaurant Landing Page",
-    category: "HTML-CSS/JS",
+    image: ngoWeb,
+    title: "SAUGAAT",
+    category: "Landing Pages",
     description:
-      "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
+      "SAUGAAT is an NGO website built on HTML, CSS, and JavaScript. It is a fully responsive website that is designed to be viewed on any device.",
     sourceLink: "/",
     demoLink: "/",
   },
   {
     id: 2,
-    image: img,
-    title: "Restaurant Landing Page",
-    category: "HTML-CSS/JS",
+    image: travelPage,
+    title: "Travel",
+    category: "Landing Pages",
     description:
-      "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
+      "Travel is a fully responsive landing page website built on HTML, SCSS and JavaScript with light and dark mode themes. It is hosted on Github Pages.",
     sourceLink: "/",
     demoLink: "/",
   },
@@ -25,7 +30,7 @@ export const CardData = [
     id: 3,
     image: img,
     title: "Restaurant Landing Page",
-    category: "HTML-CSS/JS",
+    category: "Landing Pages",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",
@@ -43,29 +48,29 @@ export const CardData = [
   },
   {
     id: 5,
-    image: img,
-    title: "Restaurant Landing Page",
+    image: movieScape,
+    title: "Moviescape",
     category: "ReactJS",
     description:
-      "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
-    sourceLink: "/",
-    demoLink: "/",
+      "MovieScape is a web application that allows users to search for movies and TV Series. It also provides trending movies and series. It is hosted on Netlify.",
+    sourceLink: "https://github.com/Saurav017/Moviescape",
+    demoLink: "https://heuristic-minsky-1ccec7.netlify.app/",
   },
   {
     id: 6,
-    image: img,
-    title: "Restaurant Landing Page",
-    category: "HTML-CSS/JS",
+    image: spaceX,
+    title: "SpaceX Launch",
+    category: "ReactJS",
     description:
-      "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
-    sourceLink: "/",
-    demoLink: "/",
+      "SpaceX Launch App is a web application built on NextJS and GraphQL that shows the launch programs from SpaceX. It is hosted on Vercel.",
+    sourceLink: "https://github.com/Saurav017/SpaceXProgramsApp",
+    demoLink: "https://spacex-app-ruddy.vercel.app/",
   },
   {
     id: 7,
     image: img,
     title: "Restaurant Landing Page",
-    category: "HTML-CSS/JS",
+    category: "Landing Pages",
     description:
       "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
     sourceLink: "/",

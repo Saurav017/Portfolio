@@ -4,7 +4,8 @@
     padding: 10px;
     background-color: var(--card-color);
     box-shadow: 0 3px 8px 0 rgba(0, 0,0,0.3);
-    /* border-radius: 10px; */
+
+    border-radius: 5px;
 }   
 
 .imgContainer {
@@ -12,6 +13,8 @@
     transition: all 0.3s ease-in-out;
     /* border-radius: 10px 10px 0 0 ; */
     overflow: hidden;
+    padding: 2%;
+    background-color: var(--card-btn-color);
 }
 
 

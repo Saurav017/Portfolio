@@ -11,7 +11,7 @@ import { FaTimes } from "react-icons/fa";
 import Logo from '../../public/images/logo.png'
 
 const Navbar = () => {
-  const [activeTheme, setActiveTheme] = useState("light");
+  const [activeTheme, setActiveTheme] = useState("dark");
   const inactiveTheme = activeTheme === "light" ? "dark" : "light";
     const [isOpen, setIsOpen] = useState(true);
 
