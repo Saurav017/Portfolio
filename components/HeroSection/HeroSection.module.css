@@ -11,7 +11,7 @@
 .heroDiv {
     height: 70vh;
     width: 100%;
-    padding: 4% 5%;
+    padding: 7% 5%;
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
     align-items: center;
