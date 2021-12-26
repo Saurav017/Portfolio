@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    padding-top: 90px;
+    margin-top: 80px;
     color: var(--primary-text-color);
     text-transform: uppercase;
     display: flex;
@@ -10,9 +10,9 @@
 
 
 .heroDiv {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
-    padding: 2% 8% 7%;
+    padding: 30px 8% 7% 8%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
