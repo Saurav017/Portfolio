@@ -12,18 +12,14 @@
 
 
 .imageContainer {
-    width: 75%;
-    height: 300px;
-    position: relative;
+    display: none;
 }
 
 
 .aboutContainer {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
 }
 
 .description {

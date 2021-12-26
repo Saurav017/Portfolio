@@ -168,7 +168,6 @@ grid-area: "icons";
     }
 
     .imgContainer {
-        margin-left: 30px;
         width: 75%;
         grid-column: 3/4;
     }

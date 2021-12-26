@@ -26,7 +26,8 @@ const AboutSection = () => {
               <Image
                 src={myImage}
                 alt="My-Pic"
-                layout="intrinsic"
+                layout="responsive"
+                objectFit="contain"
               />
             </div>
             <div className={classes.aboutContainer}>

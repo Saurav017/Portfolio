@@ -1,34 +1,34 @@
-import Image from 'next/image'
-import { Link as LinkS }  from 'react-scroll'
-import Link from 'next/link'
-import heroImg  from '../../public/images/heroImg.png'
-import classes from './HeroSection.module.css'
+import Image from "next/image";
+import { Link as LinkS } from "react-scroll";
+import Link from "next/link";
+import heroImg from "../../public/images/heroImg.png";
+import classes from "./HeroSection.module.css";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
-import MouseScroll from '../UI/Mouse-Scroll/MouseScroll'
+import MouseScroll from "../UI/Mouse-Scroll/MouseScroll";
 
 const HeroSection = () => {
-    return (
-      <main className={classes.container}>
-        <div className={classes.heroDiv}>
-          <div className={classes.iconsDiv}>
-            <div className={classes.icon}>
-              <Link href="https://twitter.com/SauravPurohit4">
-                <FaTwitter />
-              </Link>
-            </div>
-            <div className={classes.icon}>
-              <Link href="https://twitter.com/SauravPurohit4">
-                <FaLinkedin />
-              </Link>
-            </div>
-            <div className={classes.icon}>
-              <Link href="https://twitter.com/SauravPurohit4">
-                <AiFillGithub />
-              </Link>
-            </div>
+  return (
+    <main className={classes.container}>
+      <div className={classes.heroDiv}>
+        <div className={classes.iconsDiv}>
+          <div className={classes.icon}>
+            <Link href="https://twitter.com/SauravPurohit4">
+              <FaTwitter />
+            </Link>
           </div>
+          <div className={classes.icon}>
+            <Link href="https://twitter.com/SauravPurohit4">
+              <FaLinkedin />
+            </Link>
+          </div>
+          <div className={classes.icon}>
+            <Link href="https://twitter.com/SauravPurohit4">
+              <AiFillGithub />
+            </Link>
+          </div>
+        </div>
         <div className={classes.imgContainer}>
           <Image
             src={heroImg}
@@ -58,11 +58,11 @@ const HeroSection = () => {
               <span className={classes.sendSpan}>View My Work</span>
             </button>
           </LinkS>
-          </div>
-          </div>  
-        <MouseScroll />
-      </main>
-    );
-}
+        </div>
+      </div>
+      <MouseScroll />
+    </main>
+  );
+};
 
-export default HeroSection
+export default HeroSection;
