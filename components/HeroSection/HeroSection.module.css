@@ -9,12 +9,11 @@
 
 
 .heroDiv {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     padding: 2% 5%;
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
-
     align-items: center;
     justify-content: center;
 }
@@ -54,7 +53,7 @@ grid-area: "icons";
 }
 
 .imgContainer {
-    width: 85%;
+    width: 65%;
     display: block;   
     margin-left: 10px;
     grid-area: "image";
@@ -152,6 +151,7 @@ grid-area: "icons";
     }
 
     .imgContainer {
+        width: 75%;
         grid-column: 3/4;
     }
     .textDiv {
