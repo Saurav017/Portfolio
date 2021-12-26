@@ -25,48 +25,35 @@
     grid-template-columns: 0.5fr 1.5fr;
     grid-gap: 20px;
     margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .iconsDiv {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-max-width: 200px;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-gap: 1rem;
+justify-content: space-evenly;
+max-height: 80%;
 }
 
 .icon {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    font-size: 1.3rem;
     background: transparent;
-    border: 1px solid #008bc4;
-    color: #008bc4;
+    color: var(--secondary-color-inverted);
+    border: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:    center;
     margin-right: 10px;
     cursor: pointer;
     position: relative;
 }
 
-.icon:not(:last-child):after {
-    content: "";
-    position: absolute;
-    top: 29px;
-    width: 0;
-    border: 1px solid #008bc4;
-    height: 100%;
-    background: #008bc4;
-}
-
-.icon:hover {
-    transition: all 0.3s ease-in-out;
-    background-color: #008bc4;
-    color: white;
-}
-
 .imgContainer {
-    width: 60%;
+    width: 75%;
     display: block;   
     margin-left: 10px;
 }
