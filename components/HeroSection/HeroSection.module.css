@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    padding: 7% 8%;
+    padding-top: 90px;
     color: var(--primary-text-color);
     text-transform: uppercase;
     display: flex;
@@ -8,13 +8,23 @@
     min-height: 500px;
 }
 
+
 .heroDiv {
-    height: 100%;
+    height: 80vh;
     width: 100%;
+    padding: 2% 8% 7%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.imgDiv {
+    display: block;
+    margin-left: 30%;
+    width: 70%;
+    height: 200px;
+    position: relative;
 }
 
 
