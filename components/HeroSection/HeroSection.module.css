@@ -53,7 +53,7 @@ grid-area: "icons";
 }
 
 .imgContainer {
-    width: 75%;
+    width: 85%;
     display: block;   
     margin-left: 10px;
     grid-area: "image";
