@@ -1,9 +1,11 @@
-import img from '../../../public/images/restro.png'
 import movieScape from '../../../public/images/moviescape.png'
 import spaceX from '../../../public/images/spacex.png'
 import travelPage from '../../../public/images/travelpage.png'
 import ngoWeb from '../../../public/images/ngoweb.png'
-
+import netflix from '../../../public/images/netflix.png'
+import quizApp from '../../../public/images/quizapp.png'
+import calculator from '../../../public/images/calculator.png'
+import bookKeeper from '../../../public/images/book-keeper.png'
 
 export const CardData = [
   {
@@ -28,26 +30,46 @@ export const CardData = [
   },
   {
     id: 3,
-    image: img,
-    title: "Restaurant Landing Page",
-    category: "Landing Pages",
+    image: calculator,
+    title: "Calculator",
+    category: "JavaScript",
     description:
-      "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
+      "Calculator is a small project built using Vanilla JavaScript and CSS. It is hosted on Github pages. ",
     sourceLink: "/",
     demoLink: "/",
   },
   {
     id: 4,
-    image: img,
-    title: "Restaurant Landing Page",
-    category: "JavaScript",
+    image: netflix,
+    title: "Netflix Clone",
+    category: "Landing Pages",
     description:
-      "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
+      "Netflix clone is a fully responsive netflix landing page clone developed on HTML, CSS and JavaScript. It is hosted on Github pages",
     sourceLink: "/",
     demoLink: "/",
   },
   {
     id: 5,
+    image: quizApp,
+    title: "Quiz App",
+    category: "JavaScript",
+    description:
+      "Quiz Application is a small JavaScript based project containing 5 multiple choice questions having a 15 seconds time for each question.",
+    sourceLink: "https://github.com/Saurav017/Quiz-Application-with-Timer",
+    demoLink: "https://saurav017.github.io/Quiz-Application-with-Timer/",
+  },
+  {
+    id: 6,
+    image: bookKeeper,
+    title: "Book Keeper",
+    category: "JavaScript",
+    description:
+      "Bookmark Keeper is a project based on Vanilla JS to keep our favourite bookmarks at one place. We can fill thr modal form to add link here.",
+    sourceLink: "https://github.com/Saurav017/Quiz-Application-with-Timer",
+    demoLink: "https://saurav017.github.io/Quiz-Application-with-Timer/",
+  },
+  {
+    id: 7,
     image: movieScape,
     title: "Moviescape",
     category: "ReactJS",
@@ -57,7 +79,7 @@ export const CardData = [
     demoLink: "https://heuristic-minsky-1ccec7.netlify.app/",
   },
   {
-    id: 6,
+    id: 8,
     image: spaceX,
     title: "SpaceX Launch",
     category: "ReactJS",
@@ -65,15 +87,5 @@ export const CardData = [
       "SpaceX Launch App is a web application built on NextJS and GraphQL that shows the launch programs from SpaceX. It is hosted on Vercel.",
     sourceLink: "https://github.com/Saurav017/SpaceXProgramsApp",
     demoLink: "https://spacex-app-ruddy.vercel.app/",
-  },
-  {
-    id: 7,
-    image: img,
-    title: "Restaurant Landing Page",
-    category: "Landing Pages",
-    description:
-      "Lorem ipsum dolor sit ameet Lorem ipsum dolor sit ameetLorem ipsum dolor sit ameet,Lorem ipsum dolor sit ameet",
-    sourceLink: "/",
-    demoLink: "/",
   },
 ];

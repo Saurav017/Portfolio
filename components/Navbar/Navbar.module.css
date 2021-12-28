@@ -73,10 +73,6 @@ content: '';
 
 }
 
-.navlink:active {
-    color: white;
-}
-
 .icons  {
     display: flex;
     align-items: center;

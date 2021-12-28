@@ -13,8 +13,9 @@
     content: "";
     position: absolute;
     border: 2px solid #008bc4;
+    background-color: #008bc4;
     bottom: -5px;
-    left: -10px;
+    left: 0;
     width: 100%
 }
 

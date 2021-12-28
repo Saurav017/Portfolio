@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .categoryBtn {
@@ -15,6 +15,7 @@
     display: inline-block;
     position: relative;
     font-weight: 500;
+    margin: 0.5rem 0
 }
 
 .categoryBtn:after {
@@ -30,9 +31,15 @@
     transition: transform 0.5s ease-in-out
 }
 
+
+
 .categoryBtn:hover::after, .categoryBtn:active::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.categoryBtn:focus {
+    color: #008bc4;
 }
 
 @media screen and (min-width: 768px) {

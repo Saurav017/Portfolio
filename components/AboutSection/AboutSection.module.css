@@ -30,7 +30,7 @@
 .cv {
     background-color: var(--mainbg-color);
     border: 2px solid #008bc4;
-    margin-top: 10px;
+    margin-top: 25px;
     padding: 13px 22px;
     color: #008bc4;
     border-radius:30px;
@@ -57,7 +57,7 @@
 
     .about {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         grid-gap: 0 30px;
         margin-top: 60px;
         justify-content: center;
@@ -66,13 +66,13 @@
 
 .imageContainer {
     display: block;
-    width: 100%;
-    margin-left: 15px;
+    width: 60%;
+    margin-left: 0;
 }
 
    
     .description {
-        width:95%;
+        width:100%;
     }
 
 }
@@ -81,5 +81,23 @@
     .about {
         display: grid;
         grid-template-columns: 40% 60%;
+    }
+
+    
+.imageContainer {
+    display: block;
+    width: 90%;
+    margin-left: 20px;
+    position: relative;
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .about {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 0 40px;
     }
 }
