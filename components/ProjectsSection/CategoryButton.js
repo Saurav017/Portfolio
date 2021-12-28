@@ -5,7 +5,7 @@ const CategoryButton = ({filterCategory, handleFilter }) => {
         <div className={classes.container}>
             {filterCategory.map((category, index) => {
                 return (
-                    <button className={classes.categoryBtn} type="button" onClick={() => handleFilter(category)}>
+                    <button className={ classes.categoryBtn} type="button" onClick={() => handleFilter(category)}>
                         {category}
                     </button>
                 )

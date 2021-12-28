@@ -45,8 +45,7 @@ ul {
 }
 
 header {
-    height: 90vh;
+    height: 100vh;
     background: var(--mainbg-color);
     font-family: 'Poppins','sans-serif';
-    position: relative;
 }

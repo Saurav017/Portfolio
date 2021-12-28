@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 0;
     color: var(--primary-text-color);
     text-transform: uppercase;
     display: flex;
@@ -9,8 +9,9 @@
 
 
 .heroDiv {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
+    margin-top: 80px;
     margin-bottom: 30px;
     padding: 5%;
     display: grid;
@@ -124,11 +125,24 @@ grid-area: "icons";
     width: 100%;
 }
 
+
+@media screen and (min-width: 550px) {
+    
+    .imgContainer {
+        width: 50%;
+    }
+
+    .description {
+        width: 80%;
+    }
+    
+}
+
 @media screen and (min-width: 750px) {
     
 
     .heroDiv {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     padding: 2% 8% 2%;
     display: grid;
@@ -148,6 +162,10 @@ grid-area: "icons";
     .textDiv {
         grid-row: 1/2;
         grid-column: 2/3;
+    }
+
+    .description {
+        width: 100%;
     }
     
 
