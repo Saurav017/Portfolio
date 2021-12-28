@@ -54,23 +54,14 @@
     text-decoration: none;
 }
 
-.navlink::after {
-content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -10px;
-    left: 0;
-    background-color: var(--secondary-text-color);
-    transform-origin: bottom-right;
-    transition: transform 0.3s ease-in-out
+
+.navlink:hover {
+    color: var(--navlink-color);
 }
 
-.navlink:hover::after, .navlink:focus::after {
-        transform: scaleX(1);
-    transform-origin: bottom left;
-
+.navlink.open {
+    padding: 0;
+   color: var(--navlink-color)
 }
 
 .icons  {
@@ -80,6 +71,7 @@ content: '';
     font-size: 2rem;
     margin-left: 1rem;
 }
+
 
 .themeicon {
     margin-right: 10px;

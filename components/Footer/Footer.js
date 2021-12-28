@@ -11,14 +11,19 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   let year = new Date().getFullYear();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <footer className={classes.main}>
       <div className={classes.container}>
-        <div className={classes.btpContainer}>
+        <div className={classes.btpContainer} onClick={scrollToTop}>
           <div className={classes.btpIcon}>
-            <LinkS to="home" smooth={true} spy={true} duration={500} offset={0}>
               <BsArrowBarUp />
-            </LinkS>
           </div>
           <p>Back To Top</p>
         </div>

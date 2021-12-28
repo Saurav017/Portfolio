@@ -19,6 +19,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 1rem;
+
     font-weight: 600;
     position: absolute;
     top: -20%;
@@ -31,13 +32,13 @@
     margin: 0 auto;
     width: 55%;
     font-size: 2.5rem;
-    padding: 10px 10px 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
     cursor: pointer;
     font-weight: 800;
     color: var(--secondary-color-inverted);
-    box-shadow: 0 2px 4px 0 rgba(0,14,20,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,14,20,0.5);
 }
 
 

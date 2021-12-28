@@ -19,12 +19,12 @@ const HeroSection = () => {
             </Link>
           </div>
           <div className={classes.icon}>
-            <Link href="https://twitter.com/SauravPurohit4">
+            <Link href="https://www.linkedin.com/in/saurav-purohit-b4b739195/">
               <FaLinkedin />
             </Link>
           </div>
           <div className={classes.icon}>
-            <Link href="https://twitter.com/SauravPurohit4">
+            <Link href="https://github.com/Saurav017">
               <AiFillGithub />
             </Link>
           </div>

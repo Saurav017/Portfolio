@@ -1,37 +1,44 @@
-import { useRef } from 'react';
+import emailjs from 'emailjs-com'
+import { useState, useRef } from 'react';
 import SectionHeading from "../UI/SectionHeading/SectionHeading";
 import classes from "./ContactSection.module.css";
 
 const ContactSection = () => {
+
+  const [isSuccess, setIsSuccess] = useState(false)
+
   const nameInputRef = useRef();
   const emailInputRef = useRef();
   const subjectInputRef = useRef();
   const messageInputRef = useRef();
+const formRef = useRef();
+
 
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
+    
+    emailjs
+      .sendForm(
+        "service_lm5wfov",
+        "template_mp8xfjg",
+        formRef.current,
+        "user_9neBPqWYnQMU1EgP3lreJ"
+      )
+      .then(
+        (result) => {
+          setIsSuccess(true)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
-    const enteredName = nameInputRef.current.value;
-    const enteredEmail = emailInputRef.current.value;
-    const enteredSubject = subjectInputRef.current.value;
-    const enteredMessage = messageInputRef.current.value;
-
-    const formData = {
-      name: enteredName,
-      email: enteredEmail,
-      subject: enteredSubject,
-      message: enteredMessage
-    }
-
-    console.log(formData)
-
-    fetch('/api/mail', {
-      method: 'post',
-      body: JSON.stringify(formData)
-    })
-
+    setTimeout(() => {
+          setIsSuccess(false)
+        }, [10000])
+    
     nameInputRef.current.value = "";
     emailInputRef.current.value = "";
     messageInputRef.current.value = "";
@@ -47,8 +54,15 @@ const ContactSection = () => {
         <p className={classes.subtitle}>
           Got a question or proposal, or just want to say hello? Go ahead.
         </p>
+
+        {isSuccess && <p style={{
+          padding: '10px 0',
+          color: '#008bc4',
+          textAlign: 'center',
+          transition: 'all 0.3s ease'
+        }}>Hey, Thanks for filling this form. Will be getting back to you ASAP.</p>}
         <div className={classes.formContainer}>
-          <form method="post" onSubmit={formSubmitHandler}>
+          <form method="post" onSubmit={formSubmitHandler} ref={formRef}>
             <div className={classes.inputContainer}>
               <label htmlFor="name" className={classes.labelName}>
                 Your Name

@@ -9,7 +9,7 @@
 
 
 .heroDiv {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     margin-top: 80px;
     margin-bottom: 30px;
@@ -128,6 +128,11 @@ grid-area: "icons";
 
 @media screen and (min-width: 550px) {
     
+    .container {
+        margin-bottom: 30px;
+    }
+
+
     .imgContainer {
         width: 50%;
     }

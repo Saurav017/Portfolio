@@ -77,8 +77,8 @@ const Navbar = () => {
                           spy={true}
                           smooth={true}
                           duration={400}
-                            offset={0}
-                            activeClass={classes.active}
+                            offset={-50}
+                            activeClass={classes.navlink + ' ' + classes.open}
                         >
                           {link.title}
                         </LinkS>

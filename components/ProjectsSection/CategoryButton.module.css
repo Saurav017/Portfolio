@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin: 1rem 0; 
 }
 
 .categoryBtn {
@@ -38,7 +38,7 @@
     transform-origin: bottom left;
 }
 
-.categoryBtn:focus {
+.categoryBtn.active {
     color: #008bc4;
 }
 

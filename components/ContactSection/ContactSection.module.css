@@ -39,6 +39,7 @@
     border: none;
     padding: 5px 5px 5px 8px;
     background-color: transparent;
+    font: 'Inter', sans-serif;
     border: 2px solid var(--primary-text-color);
     color: var(--primary-text-color);
     border-radius: 10px;

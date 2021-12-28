@@ -9,6 +9,7 @@ body {
   --bg-color: #008bc4;
   --invertedbg-color: #001c27;
   --mainbg-color: #fff;
+  --navlink-color: #d3d3d3;
   --primary-text-color: #000e14;
   --secondary-text-color: #fff;
   --card-color: #fff;  
@@ -22,6 +23,7 @@ body {
   --invertedbg-color: #008bc4;
   --mainbg-color: #000e14;
     --primary-text-color: #fff;
+    --navlink-color: #fff;
   --secondary-text-color: #008bc4;
   --card-color: #001c27;
   --card-color-inverted: #fff;
