@@ -11,7 +11,7 @@ const CategoryButton = ({ filterCategory, handleFilter, id }) => {
                         {category}
                     </button>
                 )
-            })})
+            })}
         </div>
     )
 }
