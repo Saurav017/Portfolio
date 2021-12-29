@@ -15,8 +15,8 @@ export const CardData = [
     category: "Landing Pages",
     description:
       "SAUGAAT is an NGO website built on HTML, CSS, and JavaScript. It is a fully responsive website that is designed to be viewed on any device.",
-    sourceLink: "/",
-    demoLink: "/",
+    sourceLink: "https://github.com/Saurav017/An-NGO-website",
+    demoLink: "https://saurav017.github.io/SAUGAAT/",
   },
   {
     id: 2,
@@ -25,8 +25,8 @@ export const CardData = [
     category: "Landing Pages",
     description:
       "Travel is a fully responsive landing page website built on HTML, SCSS and JavaScript with light and dark mode themes. It is hosted on Github Pages.",
-    sourceLink: "/",
-    demoLink: "/",
+    sourceLink: "https://github.com/Saurav017/Travel-Landing-Page",
+    demoLink: "https://saurav017.github.io/Travel-Landing-Page/",
   },
   {
     id: 3,
@@ -35,8 +35,8 @@ export const CardData = [
     category: "JavaScript",
     description:
       "Calculator is a small project built using Vanilla JavaScript and CSS. It is hosted on Github pages. ",
-    sourceLink: "/",
-    demoLink: "/",
+    sourceLink: "https://github.com/Saurav017/Calculator",
+    demoLink: "https://saurav017.github.io/Calculator/",
   },
   {
     id: 4,
@@ -45,8 +45,8 @@ export const CardData = [
     category: "Landing Pages",
     description:
       "Netflix clone is a fully responsive netflix landing page clone developed on HTML, CSS and JavaScript. It is hosted on Github pages",
-    sourceLink: "/",
-    demoLink: "/",
+    sourceLink: "https://codepen.io/pen/?template=NWjGmxM",
+    demoLink: "https://codepen.io/pen/?template=NWjGmxM",
   },
   {
     id: 5,
@@ -65,8 +65,8 @@ export const CardData = [
     category: "JavaScript",
     description:
       "Bookmark Keeper is a project based on Vanilla JS to keep our favourite bookmarks at one place. We can fill thr modal form to add link here.",
-    sourceLink: "https://github.com/Saurav017/Quiz-Application-with-Timer",
-    demoLink: "https://saurav017.github.io/Quiz-Application-with-Timer/",
+    sourceLink: "https://github.com/Saurav017/Book-KeeperApp",
+    demoLink: "https://saurav017.github.io/Book-KeeperApp/",
   },
   {
     id: 7,

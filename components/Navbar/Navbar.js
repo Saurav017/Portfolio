@@ -47,6 +47,8 @@ const Navbar = () => {
     
   const NavMenuClass = isOpen ? classes.navmenu : classes.navmenu + ' ' + classes.active
 
+const name = "<sp.dev />"
+
   return (
     <nav className={classes.main}>
       <div className={classes.container}>
@@ -57,7 +59,7 @@ const Navbar = () => {
             smooth={true}
             duration={400}
           offset={0}>
-          Saurav
+          {name}
           </LinkS>
 
         </div>

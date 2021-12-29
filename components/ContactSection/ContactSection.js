@@ -50,7 +50,7 @@ const formRef = useRef();
   return (
     <section className={classes.main} id="contact">
       <div className={classes.container}>
-        <SectionHeading title="Get in Touch" />
+            <h1 className={classes.heading}>Get In Touch</h1>            
         <p className={classes.subtitle}>
           Got a question or proposal, or just want to say hello? Go ahead.
         </p>

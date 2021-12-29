@@ -32,8 +32,8 @@ const AboutSection = () => {
             </div>
             <div className={classes.aboutContainer}>
               <p className={classes.description}>
-                Hello! My name is Saurav Purohit from India and currently I'm in
-                my 3rd year of college. I love to solve problems whether it's
+                Hello, My name is Saurav Purohit and I'm from India currently in
+                my 3rd year of college pursuing my undergrad in Bachelor of Technology. I love to solve problems whether it's
                 finding the most elegant way to write lines of code or figuring
                 out which code fits best into progression.I am committed to
                 learning and self-development to achieve better results. I am

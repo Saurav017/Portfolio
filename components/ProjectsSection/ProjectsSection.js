@@ -13,23 +13,27 @@ const ProjectsSection = () => {
 
   const [projects, setProjects] = useState(CardData)
   const [filterCategory, setFilterCategory] = useState(allCategories)
+  const [isActiveBtn, setIsActiveBtn] = useState(0)
 
   const handleFilter = (button) => {
 
     if (button === 'All') {
       setProjects(CardData)  
+      setIsActiveBtn(allCategories.indexOf('All'));  
       return;
     } 
 
-    const filteredData = CardData.filter(item => item.category === button)
+    setIsActiveBtn(allCategories.indexOf(button))
+    const filteredData = CardData.filter(item => item.category === button)  
     setProjects(filteredData)
   }
+
 
     return (
       <section className={classes.main} id="projects">
         <div className={classes.container}>
           <SectionHeading title="Projects" />
-          <CategoryButton handleFilter={handleFilter} filterCategory={filterCategory} />          
+          <CategoryButton handleFilter={handleFilter} filterCategory={filterCategory} id={isActiveBtn}/>          
           <div className={classes.projectContainer}>
             {projects.map(card => {
               return (

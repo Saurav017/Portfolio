@@ -16,6 +16,7 @@ body {
   --card-color-inverted: #000e14;
   --card-btn-color: #d3d3d3;
   --secondary-color-inverted: #008bc4;
+  --scroll-bar-color: #d3d3d3
 }
 
 [data-theme="dark"] {
@@ -28,10 +29,32 @@ body {
   --card-color: #001c27;
   --card-color-inverted: #fff;
   --card-btn-color: #000e14;
+  --scroll-bar-color: #008bc4;
   --secondary-color-inverted: #fff;
 }
 
 
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scroll-bar-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #001c27;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #001c27;
+}
 
 a {
   color: inherit;

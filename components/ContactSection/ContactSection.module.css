@@ -8,8 +8,17 @@
     font-family: 'Inter', 'sans-serif';
 }
 
+.heading {
+        font-size: 1.6rem;
+    font-weight: 600;
+        text-align: center;
+    font-family: 'Poppins', 'sans-serif';
+    color: var(--primary-text-color);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .subtitle {
-    padding-top: 10px;
     color: var(--primary-text-color);
     text-align: center;
     font-family: 'Poppins', 'sans-serif';
@@ -107,8 +116,20 @@
         padding: 5% 8% 8%;
     }
 
+    .heading {
+        font-size: 2rem;
+    }
+
     .contactBtn {
         margin: 10px 0 0;
     }
 }
 
+
+@media screen and (min-width: 1200px) {
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+
+}

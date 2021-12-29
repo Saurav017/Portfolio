@@ -1,18 +1,13 @@
-import { useState } from 'react'
+
 import classes from './CategoryButton.module.css'
 
-const CategoryButton = ({ filterCategory, handleFilter }) => {
-    
-    const [isActive, setIsActive] = useState(false)
+const CategoryButton = ({ filterCategory, handleFilter, id }) => {
+
     return (
         <div className={classes.container}>
             {filterCategory.map((category, index) => {
                 return (
-                    <button className={isActive ? classes.categoryBtn + ' ' + classes.active : classes.categoryBtn} type="button" onClick={() => {
-                        handleFilter(category)
-                        setIsActive(true)
-                    }
-                    }>
+                    <button className={index === id ? classes.categoryBtn + ' ' + classes.active : classes.categoryBtn} type="button" onClick={() => {handleFilter(category)}}>
                         {category}
                     </button>
                 )

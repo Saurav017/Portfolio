@@ -44,8 +44,7 @@ const HeroSection = () => {
             I am <span className={classes.name}>Saurav</span>
           </h1>
           <p className={classes.description}>
-            A Front End Developer passionate to building websites and web
-            applications.
+            A College Student and a Front End Enthusiast passionate to building websites and webapps.
           </p>
           <LinkS
             to="projects"
