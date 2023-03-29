@@ -21,10 +21,10 @@ const Card = (props) => {
           <h2 className={classes.title}>{props.title}</h2>
           <p className={classes.description}>{props.description}</p>
           <div className={classes.buttonContainer}>
-            <button className={classes.button} data-title="→">
+            <button className={classes.button}>
               <Link href={props.sourceCode}>Source Code</Link>
             </button>
-            <button className={classes.button} data-title="→">
+            <button className={classes.button}>
               <Link href={props.demoCode}>Demo</Link>
             </button>
           </div>

@@ -33,7 +33,7 @@ const AboutSection = () => {
             <div className={classes.aboutContainer}>
               <p className={classes.description}>
                 Hello, My name is Saurav Purohit and I'm from India currently in
-                my 3rd year of college pursuing my undergrad in Bachelor of Technology. I love to solve problems whether it's
+                my 4th year of college pursuing my undergrad in Bachelor of Technology. I love to solve problems whether it's
                 finding the most elegant way to write lines of code or figuring
                 out which code fits best into progression.I am committed to
                 learning and self-development to achieve better results. I am
@@ -52,7 +52,7 @@ const AboutSection = () => {
                 My hobbies are playing/watching football, reading blogs and self help books, watching OTT contents. 
               </p>
               <button className={classes.cv}>
-                <a href="MyCV.pdf" download="Saurav Purohit.pdf">
+                <a href="CV.pdf" download="Saurav Purohit.pdf">
                   Download CV
                 </a>
               </button>
